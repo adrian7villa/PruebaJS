@@ -4,5 +4,9 @@ document.addEventListener('DOMContentLoaded',function(){
     const TDatos=document.getElementById('table');
     const btnAgregar=document.getElementById('add');
 
+    btnAgregar.onclick=function(){
+        console.log('Titulo: ',txtTitulo.value);
+        console.log('Descripcion: ', txtDescripcion.value);
 
+    }
 })
