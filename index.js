@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded',function(){
     btnAgregar.onclick=function(){
         console.log('Titulo: ',txtTitulo.value);
         console.log('Descripcion: ', txtDescripcion.value);
-
+        //esta es la mas reciente
     }
 })
