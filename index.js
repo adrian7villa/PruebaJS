@@ -9,5 +9,6 @@ document.addEventListener('DOMContentLoaded',function(){
         console.log('Descripcion: ', txtDescripcion.value);
         //esta es la mas reciente
         //se agrega nueva linea para prueba1
+        //prueb2
     }
 })
