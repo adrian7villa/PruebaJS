@@ -10,5 +10,6 @@ document.addEventListener('DOMContentLoaded',function(){
         //esta es la mas reciente
         //se agrega nueva linea para prueba1
         //prueb2
+        //prueba de remoto con rama prueba 2 clonada
     }
 })
