@@ -8,5 +8,6 @@ document.addEventListener('DOMContentLoaded',function(){
         console.log('Titulo: ',txtTitulo.value);
         console.log('Descripcion: ', txtDescripcion.value);
         //esta es la mas reciente
+        //se agrega nueva linea para prueba1
     }
 })
