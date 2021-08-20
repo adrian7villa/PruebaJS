@@ -7,4 +7,6 @@
     git push -u origin master
 5) Si hay ramas se pueden subir al remoto  
     git push -u origin prueba1
-*Para subir 
+*Para bajar de una ramas
+
+        git pull origin prueba2
