@@ -25,9 +25,14 @@ document.addEventListener('DOMContentLoaded',function(){
         }
         
         LAlerta.classList.add('d-none');
+        const Fila=TDatos.insertRow();
+        Fila.innerHTML=`
+        `
+
     }
 
     btnAgregar.onclick=addTodo;
+
 
 
 });
