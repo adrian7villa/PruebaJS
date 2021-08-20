@@ -1,0 +1,10 @@
+//Remoto
+1) Se crea el reporsitorio en github
+2) Se copia la url que te da github
+3) Se asoscia el remoto con el repositorio local:
+    git remote add origin https://github.com/adrian7villa/PruebaJS.git
+4) Se sube la informacion del local al remoto
+    git push -u origin master
+5) Si hay ramas se pueden subir al remoto  
+    git push -u origin prueba1
+*Para subir 
