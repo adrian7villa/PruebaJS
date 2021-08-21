@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded',function(){
     const TDatos=document.getElementById('table');
     const btnAgregar=document.getElementById('add');
     const LAlerta=document.getElementById('alert');
+    let id=1;
+
+    function removeTodo(id){
+        //console.log(id);
+        document.getElementById(id).remove();
+    }
 
 
     /*btnAgregar.onclick=function(){
@@ -26,9 +32,28 @@ document.addEventListener('DOMContentLoaded',function(){
         
         LAlerta.classList.add('d-none');
         const Fila=TDatos.insertRow();
+        Fila.setAttribute('id',id++)
         Fila.innerHTML=`
-        `
+            <td>${txtTitulo.value}</td>
+            <td>${txtDescripcion.value}</td>
+            <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td class="text-right">
+                <button class="btn btn-primary mb-1">
+                  <i class="fa fa-pencil"></i>
+                </button>
+            </td>
+            `;
 
+            const btnBorrar=document.createElement('button');
+            btnBorrar.classList.add('btn','btn-danger','mb-1','ml-1');
+            btnBorrar.innerHTML=`<i class="fa fa-trash"></i>`;
+            btnBorrar.onclick=function(e){
+                //console.log(e.target.parentNode);
+                removeTodo(Fila.getAttribute('id'));
+            }
+            Fila.children[3].appendChild(btnBorrar);
     }
 
     btnAgregar.onclick=addTodo;
