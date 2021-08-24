@@ -5,3 +5,14 @@
     docker ps -a   Lista contenedores parados
 3) Eliminar contenedores
     docker rm [id]
+
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+cd getting-started
+docker run -d -p 80:80 --name docker-tutorial docker101tutorial
+docker run -it centos bash
+docker run -d -p 80:80 docker/getting-sta
+docker run -p 127.0.0.1:3306:3306  --name some-mariadb -e MARIADB_ROOT_PASSWORD=1234 -d mariadb:tag
+docker run -d -p 4000:80 php:7.0-apache    
+docker run -d -p 3000:80 php:5.5.38-apache
