@@ -1,0 +1,7 @@
+1) Listar imagenes
+    docker imagenes
+2) Listar contenedores
+    docker ps
+    docker ps -a   Lista contenedores parados
+3) Eliminar contenedores
+    docker rm [id]
