@@ -21,3 +21,8 @@ docker run -d -p 3000:80 php:5.5.38-apache
 
 docker rm $(docker ps -aq)   //esto elimina todos los contenedores
 docker ps -aq    //lista los id de los contenedores creados
+
+
+docker build -t hellonode3 .  //comando para crear la imagen del docker basado en el dockfile
+
+docker run -p 4000:3000 hellonode3  //comando para correr el contenedor y exponerlo por un puerto
