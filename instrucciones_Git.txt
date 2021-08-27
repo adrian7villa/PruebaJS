@@ -10,3 +10,8 @@
 *Para bajar de una ramas
 
         git pull origin prueba2
+Para bajar una rama en especifico hay que crerala en el repositorio local y hacer pull
+
+git branch desarrollo 
+
+git pull origin desarrollo //para hacer pull hay que estar sobre la rama creada con checkout
