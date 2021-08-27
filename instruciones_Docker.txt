@@ -16,3 +16,8 @@ docker run -d -p 80:80 docker/getting-sta
 docker run -p 127.0.0.1:3306:3306  --name some-mariadb -e MARIADB_ROOT_PASSWORD=1234 -d mariadb:tag
 docker run -d -p 4000:80 php:7.0-apache    
 docker run -d -p 3000:80 php:5.5.38-apache
+
+
+
+docker rm $(docker ps -aq)   //esto elimina todos los contenedores
+docker ps -aq    //lista los id de los contenedores creados
