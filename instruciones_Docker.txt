@@ -26,3 +26,15 @@ docker ps -aq    //lista los id de los contenedores creados
 docker build -t hellonode3 .  //comando para crear la imagen del docker basado en el dockfile
 
 docker run -p 4000:3000 hellonode3  //comando para correr el contenedor y exponerlo por un puerto
+
+
+
+
+  GNU nano 4.8                                                                                       Dockerfile                                                                                                 
+  
+FROM php:5.3-apache
+
+COPY /usr/src/myapp /var/www/html
+
+EXPOSE 80
+
