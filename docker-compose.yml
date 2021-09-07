@@ -17,4 +17,4 @@ services:
     ports: 
         - "27018:27017"
     logging:
-	driver:none
+	    driver: none
